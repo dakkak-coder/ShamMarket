@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "شام ماركت",
+    "slug": "sham-market",
+    "version": "0.1.0",
+    "orientation": "default",
+    "backgroundColor": "#f5f5f5",
+    "primaryColor": "#2c4a72",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sham.market"
+    },
+    "android": {
+      "package": "com.sham.market",
+      "adaptiveIcon": {
+        "backgroundColor": "#2c4a72",
+        "foregroundImage": "./assets/icon.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
