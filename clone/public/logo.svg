@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" height="120">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#2c4a72" />
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#f5a82c" stroke-width="3" />
+
+  <!-- Stylized Damascus Gate / arch -->
+  <path d="M50 130 C50 130, 50 70, 100 30 C150 70, 150 130, 150 130"
+        fill="#e05a3a" stroke="#c4462c" stroke-width="2" />
+
+  <!-- Inner arch (negative space) -->
+  <path d="M70 130 C70 130, 70 55, 100 45 C130 55, 130 130, 130 130"
+        fill="#2c4a72" />
+
+  <!-- Decorative star (8-pointed, Islamic geometric) -->
+  <polygon points="100,55 105,68 118,63 110,75 120,85 107,80 100,93 93,80 80,85 90,75 82,63 95,68"
+           fill="#f5a82c" />
+
+  <!-- Text: "شام" (Sham) centered below arch -->
+  <text x="100" y="155" text-anchor="middle"
+        font-family="'Tajawal', 'Noto Kufi Arabic', sans-serif"
+        font-size="22" font-weight="700" fill="#ffffff">شام</text>
+
+  <!-- Text: "MARKET" in English below -->
+  <text x="100" y="175" text-anchor="middle"
+        font-family="'Inter', 'Segoe UI', sans-serif"
+        font-size="11" font-weight="500" fill="#a4b5d0" letter-spacing="3">MARKET</text>
+
+  <!-- Small decorative dots (Arabesque) -->
+  <circle cx="40" cy="100" r="3" fill="#f5a82c" />
+  <circle cx="160" cy="100" r="3" fill="#f5a82c" />
+</svg>

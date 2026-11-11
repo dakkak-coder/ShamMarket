@@ -1,0 +1,1 @@
+﻿{"code":"target_unavailable","category":"unavailable","message":"The current document is outside the permitted HTTP(S) origin scope.","retryable":false,"remediation":{"action":"Select a document within allowed_origins, or explicitly adjust allowed_origins if that document is intended, then retry."},"details":{"operation":"capture_web_screenshot","reason":"target_not_allowed"}}

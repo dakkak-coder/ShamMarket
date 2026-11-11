@@ -1,0 +1,33 @@
+{
+    "browser":  {
+                    "mode":  "launch",
+                    "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                },
+    "start_url":  {
+                      "url":  "http://127.0.0.1:3000/new"
+                  },
+    "environment":  {
+                        "viewport":  {
+                                         "width":  1440,
+                                         "height":  900,
+                                         "device_scale_factor":  1
+                                     },
+                        "locale":  "ar-SY",
+                        "service_workers":  "block"
+                    },
+    "actions":  [
+                    {
+                        "step_id":  "settle",
+                        "action":  "wait_for_timeout",
+                        "duration_ms":  900
+                    }
+                ],
+    "capture":  {
+                    "at_end":  [
+                                   "screenshot",
+                                   "dom",
+                                   "accessibility",
+                                   "url"
+                               ]
+                }
+}
