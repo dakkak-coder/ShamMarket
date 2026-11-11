@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { Platform } from "react-native";
+import { Platform, Text } from "react-native";
 
 export default function RootLayout() {
   return (

@@ -1,6 +1,6 @@
-import { CategoryPills } from "../components/CategoryPills";
-import { ProductCard } from "../components/ProductCard";
-import { Header } from "../components/Header";
+import { CategoryPills } from "../src/components/CategoryPills";
+import { ProductCard } from "../src/components/ProductCard";
+import { Header } from "../src/components/Header";
 
 // Mock data for demo/testing on local machine
 const mockListings = [
