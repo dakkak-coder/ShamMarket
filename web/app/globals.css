@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: "Tajawal", "Noto Kufi Arabic", "Cairo", "Segoe UI", sans-serif;
+  --font-body: "Noto Kufi Arabic", "Cairo", "Tajawal", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-damascus-blue-500: #2c4a72;
+  --color-damascus-blue-600: #1f3654;
+  --color-damascus-blue-700: #15253b;
+  --color-terracotta-500: #e05a3a;
+  --color-terracotta-600: #c4462c;
+  --color-saffron-500: #f5a82c;
+  --color-olive-500: #3f8a3f;
+  --color-olive-50: #f4f8f4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility container {
+  margin-inline: auto;
+  max-width: 1280px;
+  padding-inline: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility btn {
+  @apply rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors cursor-pointer;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility btn-primary {
+  @apply btn bg-damascus-blue-600 text-white hover:bg-damascus-blue-700;
+}
+
+@utility btn-accent {
+  @apply btn bg-terracotta-500 text-white hover:bg-terracotta-600;
+}
+
+@utility card {
+  @apply bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm;
+}
+
+@utility card-hover:hover {
+  @apply shadow-md border-gray-300;
 }

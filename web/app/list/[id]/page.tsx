@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+import { Header } from "../../components/Header";
 
 // Mock detail page for testing locally
 export default function ProductDetailPage() {
