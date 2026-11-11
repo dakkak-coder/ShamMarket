@@ -36,8 +36,6 @@
   @apply bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm;
 }
 
-@variant card-hover (:hover) {
-  & {
-    @apply shadow-md border-gray-300;
-  }
+@utility card-hover {
+  @apply hover:shadow-md hover:border-gray-300;
 }
